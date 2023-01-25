@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style> 
+        table,th, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table> 
+        <caption> My Savings </caption>
+        <colgroup>
+            <col span="1" style="background-color:green">
+            <col span="1">
+            <col span="1" style="visibility: collapse;">
+            <col span="1" style="background-color:orange">
+        </colgroup>
+        <thead> 
+            <tr>
+                <th rowspan="2"> Month </th>
+                <th colspan="2"> Savings </th>
+                <th> 100 </th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr> 
+                <td rowspan="2"> January </td>
+                <td> 100 </td>
+                <td> 100 </td>
+                <td> 100 </td>
+            </tr>
+            <tr> 
+                <td> 300 </td>
+                <td> 1000000 </td>
+                <td> 100 </td>
+            </tr>
+            <tr> 
+                <td> March </td>
+                <td> 200 </td>
+                <td> 100 </td>
+                <td> 100 </td>
+            </tr>
+        </tbody>
+        <tfoot> 
+            <tr> 
+                <td> <b>Total</b> </td>
+                <td> <b>600</b> </td>
+                <td> 100 </td>
+                <td> 100 </td>
+            </tr>
+        </tfoot>
+        
+    </table>
+</body>
+</html>
